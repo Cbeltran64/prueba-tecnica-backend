@@ -3,7 +3,7 @@ version: '3.8'
 services:
   productos-service:
     build:
-      context: ./productos-service
+      context: productos-service
     container_name: productos-service
     ports:
       - "8080:8080"
@@ -12,7 +12,7 @@ services:
 
   inventario-service:
     build:
-      context: ./inventario-service
+      context: inventario-service
     container_name: inventario-service
     ports:
       - "8081:8081"
