@@ -39,7 +39,7 @@ docker-compose up --build
 
 ## 🔄 Diagrama de Arquitectura
 
-![Diagrama de Arquitectura](./Document/Arquitectura.jpg)
+![Diagrama de Arquitectura](Img/Arquitectura.jpg)
 
 ## 🥺 Ejecución de Pruebas
 
@@ -50,9 +50,9 @@ mvn test
 ```
 
 * `productos-service`: 67% cobertura
-* ![Diagrama de Arquitectura](./Document/productos-service.png)
+* ![Diagrama de Arquitectura](Img/productos-service.png)
 * `inventario-service`: 68% cobertura
-* ![Diagrama de Arquitectura](./Document/inventario-service.png)
+* ![Diagrama de Arquitectura](Img/inventario-service.png)
 
 Ver más en [`COVERAGE.md`](COVERAGE.md) y [`PRUEBAS.md`](PRUEBAS.md).
 
