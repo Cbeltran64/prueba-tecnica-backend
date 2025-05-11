@@ -50,7 +50,9 @@ mvn test
 ```
 
 * `productos-service`: 67% cobertura
+* ![Diagrama de Arquitectura](./Document/productos-service.png)
 * `inventario-service`: 68% cobertura
+* ![Diagrama de Arquitectura](./Document/inventario-service.png)
 
 Ver más en [`COVERAGE.md`](COVERAGE.md) y [`PRUEBAS.md`](PRUEBAS.md).
 
