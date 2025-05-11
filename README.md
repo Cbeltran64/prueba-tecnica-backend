@@ -44,6 +44,21 @@ incluye un archivo `docker-compose.yml` que orquesta los servicios `productos`, 
 * **Testing:** JUnit 5 y Mockito para pruebas unitarias confiables
 * **Contenerización:** Docker para asegurar la portabilidad del entorno
 
+## 🧩 Patrones de Diseño Aplicados
+
+* **MVC (Modelo-Vista-Controlador):** Separación clara entre controlador (`@RestController`), servicio (`@Service`) y
+  acceso a datos (`@Repository`).
+
+* **DTO (Data Transfer Object):** Uso de objetos de transferencia de datos para desacoplar la lógica del modelo.
+
+* **Singleton (Spring):** Todos los componentes anotados con `@Service`, `@Repository` y `@Controller` son singletons
+  por defecto en Spring.
+
+* **Repository:** Implementado a través de `JpaRepository` para manejar el acceso a datos.
+
+* **Strategy (estructurable):** Aunque no implementado explícitamente, la arquitectura está preparada para aplicar este
+  patrón si se requieren múltiples comportamientos intercambiables.
+
 ## 🔄 Diagrama de Arquitectura
 
 ![Diagrama de Arquitectura](Img/Arquitectura.jpg)
