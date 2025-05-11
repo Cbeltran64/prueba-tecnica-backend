@@ -1,19 +1,17 @@
-package com.microservicios.productos_service.dto;
+package com.microservicios.inventario_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductoResponseDTO {
+public class InventarioResponseDTO {
 
-    private String type = "productos";
+    private String type = "inventarios";
     private Long id;
     private Attributes attributes;
 
@@ -21,7 +19,7 @@ public class ProductoResponseDTO {
     @AllArgsConstructor
     @NoArgsConstructor
     public static class Attributes {
-        private String nombre;
-        private BigDecimal precio;
+        private Long productoId;
+        private Integer cantidad;
     }
 }

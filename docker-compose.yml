@@ -3,8 +3,7 @@ version: '3.8'
 services:
   productos-service:
     build:
-      context: ../productos-service
-      dockerfile: Dockerfile
+      context: ./productos-service
     container_name: productos-service
     ports:
       - "8080:8080"
@@ -13,11 +12,10 @@ services:
 
   inventario-service:
     build:
-      context: ../inventario-service
-      dockerfile: Dockerfile
+      context: ./inventario-service
     container_name: inventario-service
     ports:
-      - "8081:8080"
+      - "8081:8081"
     networks:
       - backend-net
     depends_on:

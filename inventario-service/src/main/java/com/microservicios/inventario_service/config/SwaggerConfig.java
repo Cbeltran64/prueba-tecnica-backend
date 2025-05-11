@@ -1,4 +1,4 @@
-package com.microservicios.productos_service.config;
+package com.microservicios.inventario_service.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Configuration;
 public class SwaggerConfig {
 
     @Bean
-    public OpenAPI apiInfo() {
+    public OpenAPI inventarioOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API de Productos")
-                        .description("Microservicio para gestión de productos")
-                        .version("1.0"));
+                        .title("API Inventario Service")
+                        .version("1.0")
+                        .description("Documentación de endpoints del microservicio de inventario"));
     }
 }

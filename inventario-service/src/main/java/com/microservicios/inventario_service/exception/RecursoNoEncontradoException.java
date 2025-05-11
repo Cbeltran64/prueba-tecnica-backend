@@ -1,4 +1,4 @@
-package com.microservicios.productos_service.exception;
+package com.microservicios.inventario_service.exception;
 
 public class RecursoNoEncontradoException extends RuntimeException {
     public RecursoNoEncontradoException(String mensaje) {
