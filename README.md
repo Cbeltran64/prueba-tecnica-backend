@@ -39,7 +39,7 @@ docker-compose up --build
 
 ## 🔄 Diagrama de Arquitectura
 
-[Insertar imagen o referencia al archivo arquitectura](ARQUITECTURA.md)
+![Diagrama de Arquitectura](./Document/Arquitectura.jpg)
 
 ## 🥺 Ejecución de Pruebas
 
@@ -67,16 +67,3 @@ Ver más en [`COVERAGE.md`](COVERAGE.md) y [`PRUEBAS.md`](PRUEBAS.md).
 ├── PRUEBAS.md
 └── DOCKER.md
 ```
-
-## 📋 Checklist Final de Entrega
-
-* [x] Servicios funcionales desacoplados
-* [x] Swagger habilitado en ambos servicios
-* [x] Pruebas unitarias con cobertura >65%
-* [x] Docker Compose operativo
-* [x] Documentación técnica completa
-
-## ✉️ Contacto
-
-Diego Gutiérrez
-\[Tu correo o LinkedIn opcional]
