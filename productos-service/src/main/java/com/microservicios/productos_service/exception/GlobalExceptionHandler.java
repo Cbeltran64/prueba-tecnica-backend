@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.context.request.WebRequest;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +32,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(RecursoNoEncontradoException.class)
-    public ResponseEntity<Object> handleNotFound(RecursoNoEncontradoException ex) {
+    public ResponseEntity<Object> handleNotFound(RecursoNoEncontradoException ex, WebRequest webRequest) {
         Map<String, Object> error = Map.of(
                 "errors", List.of(Map.of(
                         "status", "404",
@@ -43,7 +44,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<Object> handleGeneralError(Exception ex) {
+    public ResponseEntity<Object> handleGeneralError(Exception ex, WebRequest webRequest) {
         Map<String, Object> error = Map.of(
                 "errors", List.of(Map.of(
                         "status", "500",
