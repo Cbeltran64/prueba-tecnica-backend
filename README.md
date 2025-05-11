@@ -29,6 +29,13 @@ docker-compose up --build
 * Productos: `http://localhost:8080/swagger-ui.html`
 * Inventario: `http://localhost:8081/swagger-ui.html`
 
+## 🐳 Contenerización con Docker
+
+Este proyecto está completamente contenerizado con Docker para asegurar su portabilidad y facilidad de despliegue. Se
+incluye un archivo `docker-compose.yml` que orquesta los servicios `productos`, `inventario` y `PostgreSQL`.
+
+👉 [Ver más sobre Docker y cómo levantar el sistema »](DOCKER.md)
+
 ## 🫠 Justificación Técnica
 
 * **Lenguaje:** Java 17
